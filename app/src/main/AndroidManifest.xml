@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Calculator"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name=".Login_Page.deleteByNumber"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.videoUpload.deleteByGoogle"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.delete_account"
+            android:exported="false" />
+        <activity
+            android:name=".about_us"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.forgetPassWithEmail"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.Security.check_Pin"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.Security.createPasswordPin"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.noteUpload.updateNote"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.noteUpload.insertNOTE"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.videoUpload.vUpload"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.videoUpload.showVideo"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.imageUpload.fullScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.imageUpload.showAllimg"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.verify_login"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.noteUpload.createNoteUpload"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.imageUpload.imgUpload"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.selectFileToUpload"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.loginWithOTP"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page.Main_Page"
+            android:exported="false" />
+        <activity
+            android:name=".length"
+            android:exported="false" />
+        <activity
+            android:name=".massConverter"
+            android:exported="false" />
+        <activity
+            android:name=".internet_data"
+            android:exported="false" />
+        <activity
+            android:name=".Time"
+            android:exported="false" />
+        <activity
+            android:name=".discount"
+            android:exported="false" />
+        <activity
+            android:name=".temperature"
+            android:exported="false" />
+        <activity
+            android:name=".bmi"
+            android:exported="false" />
+        <activity
+            android:name=".wbmr"
+            android:exported="false" />
+        <activity
+            android:name=".bmr"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator - All In One Convertor</string>
+    <string name="open_navigation">open</string>
+    <string name="close_navigation">close</string>
+    <string name="default_web_client_id" />
+    <string name="app_id">ca-app-pub-2315182175926969~6946256149</string>
+    <string name="banner_ad_units_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

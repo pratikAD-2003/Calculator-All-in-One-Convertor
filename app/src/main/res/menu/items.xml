@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/op_1"
+        android:icon="@drawable/bmi"
+        android:title="BMI Calculator" />
+
+    <item
+        android:id="@+id/bmr_op"
+        android:icon="@drawable/man"
+        android:title="BMR Man's Calculator" />
+
+    <item
+        android:id="@+id/wbmr_op"
+        android:icon="@drawable/woman"
+        android:title="BMR Woman's Calculator" />
+
+    <item
+        android:id="@+id/discount_op"
+        android:icon="@drawable/offer"
+        android:title="Discount Checker" />
+
+    <item
+        android:id="@+id/temperature_op"
+        android:icon="@drawable/thermometer"
+        android:title="Temperature Converter" />
+
+    <item
+        android:id="@+id/time_op"
+        android:icon="@drawable/clock"
+        android:title="Time Converter" />
+
+    <item
+        android:id="@+id/length_op"
+        android:icon="@drawable/tool"
+        android:title="Length Converter" />
+
+    <item
+        android:id="@+id/mass_op"
+        android:icon="@drawable/load"
+        android:title="Mass Converter" />
+
+    <item
+        android:id="@+id/data_op"
+        android:icon="@drawable/internet"
+        android:title="Data Converter" />
+
+    <item
+        android:id="@+id/share_op"
+        android:icon="@drawable/baseline_share_24"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/About_op"
+        android:icon="@drawable/baseline_info_24"
+        android:title="About Us" />
+
+</menu>

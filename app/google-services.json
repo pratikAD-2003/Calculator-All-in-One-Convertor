@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356374457046",
+    "project_id": "calculator---a-cloud-storage",
+    "storage_bucket": "calculator---a-cloud-storage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356374457046:android:5a020d54f4b90aeef4f777",
+        "android_client_info": {
+          "package_name": "com.example.calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356374457046-du7k1la7hgnehp3073iq5mr73eqeck8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM75mphVmFC8hQifZqGRv4teBlEYGsvCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356374457046-du7k1la7hgnehp3073iq5mr73eqeck8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

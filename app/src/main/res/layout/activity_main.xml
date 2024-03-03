@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/other"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:background="#222222"
+        android:contentDescription="Other Features"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <TextView
+        android:id="@+id/finalAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/Solving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/finalAns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@tools:sample/cities" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/allClear"
+                android:layout_width="102.5dp"
+                android:layout_height="80dp"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="AC"
+                android:textColor="#FF5722"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.893" />
+
+            <Button
+                android:id="@+id/oneDelete"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="⌫"
+                android:textColor="#FFEB3B"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.894" />
+
+            <Button
+                android:id="@+id/percentage"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="#FFEB3B"
+                android:textSize="50dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.66"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="÷"
+                android:textColor="#FFEB3B"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="102.5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.66"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="×"
+                android:textColor="#FFEB3B"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.66"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+            <Button
+                android:id="@+id/subtract"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="#FFEB3B"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.66"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.894" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+            <Button
+                android:id="@+id/addition"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#FFEB3B"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/decimal"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.893" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.894" />
+
+            <Button
+                android:id="@+id/doubleZero"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.66"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cal_btn"
+                android:gravity="center"
+                android:text="="
+                android:textColor="#FF5722"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

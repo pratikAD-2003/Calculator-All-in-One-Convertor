@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".bmr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:textColor="#13E1FB"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="italic|bold"
+            android:layout_marginBottom="@dimen/_50sdp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Weight In Kg..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/weight_kg3"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/custom_edittext"
+            android:hint="Enter Here.."
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:minHeight="@dimen/_48ssp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Height In Cm..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/height_cm3"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Enter Here.."
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_48ssp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Age..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/age3"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Enter Here.."
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/bmiAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="italic|bold"
+            tools:text="@tools:sample/cities" />
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5722"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textStyle="italic|bold"
+            tools:text="@tools:sample/cities" />
+
+        <Button
+            android:id="@+id/getBmr3"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/parameters"
+            android:text="Get Bmi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_units_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
